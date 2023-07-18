@@ -27,21 +27,21 @@ IPv4 = IndicatorTypes(
     name="IPv4",
     description="An IPv4 address indicating the online location of a server or other computer.",
     api_support=True,
-    sections=["general", "reputation", "geo", "malware", "url_list", "passive_dns"],
+    sections=["general", "reputation", "geo", "malware", "url_list", "passive_dns","http_scans"],
     slug="IPv4"
 )
 IPv6 = IndicatorTypes(
     name="IPv6",
     description="An IPv6 address indicating the online location of a server or other computer.",
     api_support=True,
-    sections=["general", "reputation", "geo", "malware", "url_list", "passive_dns"],
+    sections=["general", "reputation", "geo", "malware", "url_list", "passive_dns","http_scans"],
     slug="IPv6"
 )
 DOMAIN = IndicatorTypes(
     name="domain",
     description="A domain name for a website or server. Domains encompass a series of hostnames.",
     api_support=True,
-    sections=["general", "geo", "malware", "url_list", "passive_dns"],
+    sections=["general", "geo", "malware", "url_list", "passive_dns","http_scans","whois"],
     slug="domain"
 )
 HOSTNAME = IndicatorTypes(
@@ -59,7 +59,7 @@ URL = IndicatorTypes(
     name="URL",
     description=" Uniform Resource Location (URL) summarizing the online location of a file or resource.",
     api_support=True,
-    sections=["general", "url_list"],
+    sections=["general", "url_list","http_scans"],
     slug="url"
 )
 URI = IndicatorTypes(
